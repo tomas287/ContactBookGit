@@ -120,7 +120,7 @@ public class ContactBook {
 
         for (int i = 0; i < counter; i++) {
             phone1 = contacts[i].getPhone();
-            for (int j = i; j < counter; j++) {
+            for (int j = i + 1; j < counter; j++) {
                 phone2 = contacts[j].getPhone();
 
                 if (phone1 == phone2)
