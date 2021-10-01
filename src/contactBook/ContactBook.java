@@ -114,4 +114,23 @@ public class ContactBook {
         return result;
     }
 
+    public boolean hasRepeated() {
+        int phone1;
+        int phone2;
+
+        for (int i = 0; i < counter; i++) {
+            phone1 = contacts[i].getPhone();
+            for (int j = i; j < counter; j++) {
+                phone2 = contacts[j].getPhone();
+
+                if (phone1 == phone2)
+                    return true;
+
+            }
+
+        }
+        return false;
+
+    }
+
 }
